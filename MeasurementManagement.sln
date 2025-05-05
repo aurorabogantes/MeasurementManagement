@@ -4,6 +4,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.13.35913.81 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeasurementManagement.API", "MeasurementManagement\MeasurementManagement.API.csproj", "{314D8080-ADC6-445A-B628-D61048CC6308}"
+	ProjectSection(ProjectDependencies) = postProject
+		{332CF538-D50E-4E17-A0D3-722C86EDC5BA} = {332CF538-D50E-4E17-A0D3-722C86EDC5BA}
+		{4073E4CA-0AD3-44CB-BD78-995B9484C75F} = {4073E4CA-0AD3-44CB-BD78-995B9484C75F}
+		{B7A73C19-C34A-418B-80DE-529ACF4B46C5} = {B7A73C19-C34A-418B-80DE-529ACF4B46C5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeasurementManagement.BC", "MeasurementManagement.BC\MeasurementManagement.BC.csproj", "{B7A73C19-C34A-418B-80DE-529ACF4B46C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeasurementManagement.BW", "MeasurementManagement.BW\MeasurementManagement.BW.csproj", "{4073E4CA-0AD3-44CB-BD78-995B9484C75F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B7A73C19-C34A-418B-80DE-529ACF4B46C5} = {B7A73C19-C34A-418B-80DE-529ACF4B46C5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeasurementManagement.DA", "MeasurementManagement.DA\MeasurementManagement.DA.csproj", "{332CF538-D50E-4E17-A0D3-722C86EDC5BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4073E4CA-0AD3-44CB-BD78-995B9484C75F} = {4073E4CA-0AD3-44CB-BD78-995B9484C75F}
+		{B7A73C19-C34A-418B-80DE-529ACF4B46C5} = {B7A73C19-C34A-418B-80DE-529ACF4B46C5}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +33,18 @@ Global
 		{314D8080-ADC6-445A-B628-D61048CC6308}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{314D8080-ADC6-445A-B628-D61048CC6308}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{314D8080-ADC6-445A-B628-D61048CC6308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7A73C19-C34A-418B-80DE-529ACF4B46C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7A73C19-C34A-418B-80DE-529ACF4B46C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7A73C19-C34A-418B-80DE-529ACF4B46C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7A73C19-C34A-418B-80DE-529ACF4B46C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4073E4CA-0AD3-44CB-BD78-995B9484C75F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4073E4CA-0AD3-44CB-BD78-995B9484C75F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4073E4CA-0AD3-44CB-BD78-995B9484C75F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4073E4CA-0AD3-44CB-BD78-995B9484C75F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{332CF538-D50E-4E17-A0D3-722C86EDC5BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332CF538-D50E-4E17-A0D3-722C86EDC5BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332CF538-D50E-4E17-A0D3-722C86EDC5BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332CF538-D50E-4E17-A0D3-722C86EDC5BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
