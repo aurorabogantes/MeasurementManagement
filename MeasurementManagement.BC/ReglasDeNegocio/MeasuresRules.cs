@@ -9,6 +9,7 @@ namespace MeasurementManagement.BC.ReglasDeNegocio
         {
             return measure != null &&
                 !string.IsNullOrEmpty(measure.Name) &&
+                measure.Date > DateTime.Now &&
                 measure.Value > 0 &&
                 measure.Id > 0;
         }
